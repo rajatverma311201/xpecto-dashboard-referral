@@ -9,7 +9,7 @@ const UsersCountOnReferral = () => {
         (async () => {
             try {
                 const data = await axios.get(
-                    "/api/dashboard/users/referral"
+                    `${import.meta.env.VITE_BACKEND_URL}/api/dashboard/users/referral`
                 );
                 setEventsData((prev) => data.data.data.allUsers);
             } catch (error) {

@@ -7,10 +7,6 @@ const MainNavigation = () => {
             name: "Referral Data",
             link: "/referral-data",
         },
-        {
-            name: "Registrations",
-            link: "/registrations",
-        },
     ];
     return (
         // <div className={styles["main-navigation-container"]}>
@@ -26,7 +22,6 @@ const MainNavigation = () => {
             </Navbar.Brand>
             <Navbar.Content hideIn="xs">
                 <Navbar.Link href="/">Home</Navbar.Link>
-                <Navbar.Link href="/registrations">Registrations</Navbar.Link>
                 <Navbar.Link href="/referral-data">Referral Data</Navbar.Link>
                 {/* <Navbar.Link href="#">Pricing</Navbar.Link>
                     <Navbar.Link href="#">Company</Navbar.Link> */}

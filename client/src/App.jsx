@@ -17,10 +17,7 @@ const router = createBrowserRouter([
         path: "/referral-data",
         element: <UsersCountOnReferral />,
     },
-    {
-        path: "/registrations",
-        element: <Registrations />,
-    },
+
 ]);
 function App() {
     // return <div className="App"></div>;

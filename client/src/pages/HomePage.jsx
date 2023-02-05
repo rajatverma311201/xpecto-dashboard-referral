@@ -5,13 +5,13 @@ const HomePage = () => {
     return (
         <div className={styles.homePageContainer}>
             <Grid.Container gap={2}>
-                <Grid>
+                {/* <Grid>
                     <Link href="/registrations">
                         <Button size="xl" shadow color="primary" auto>
                             Registrations
                         </Button>
                     </Link>
-                </Grid>
+                </Grid> */}
 
                 <Grid>
                     <Link href="/referral-data">
