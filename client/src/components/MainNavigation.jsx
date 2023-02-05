@@ -20,9 +20,9 @@ const MainNavigation = () => {
 
                 {/* <AcmeLogo /> */}
                 {/* <Navbar.Link href="/">XPECTO</Navbar.Link> */}
-               <Text b color="inherit">
-                    XPECTO 
-                </Text> 
+                <Text b color="inherit">
+                    XPECTO
+                </Text>
             </Navbar.Brand>
             <Navbar.Content hideIn="xs">
                 <Navbar.Link href="/">Home</Navbar.Link>
