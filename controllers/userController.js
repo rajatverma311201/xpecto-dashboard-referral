@@ -24,10 +24,20 @@ exports.getAllReferral = catchAsync(async (req, res, next) => {
 
 exports.getAllUsers = catchAsync(async (req, res, next) => {
     const allUsers = await User.find();
+    let fromMandi = 0;
 
+    for (let i = 0; i < allUsers.length; i++) {
+        if (
+            allUsers[i]?.collegeName?.toLowerCase()?.includes("mandi") ||
+            allUsers[i]?.email?.toLowerCase()?.includes("mandi")
+        ) {
+            fromMandi++;
+        }
+    }
     res.status(200).json({
         status: "success",
         results: allUsers.length,
+        fromMandi: fromMandi,
         data: { allUsers },
     });
 });
